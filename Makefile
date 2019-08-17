@@ -2,7 +2,7 @@
 
 COMMENT=tiny OpenBSD daemon to change periodically MAC addresses
 
-V=	0.1.0beta4
+V=	0.1.0beta8
 
 DISTNAME=macrandrd-${V}
 REVISION= 0
@@ -17,7 +17,10 @@ HOMEPAGE= https://github.com/gpicchiarelli/macrandr
 FLAVOR?=
 MANTAINTER= Giacomo Picchiarelli <gicchiarelli@gmail.com>
 
-#License BSD 3-Clause
+LOCALBASE=${WRKINST}
+BINDIR=
+
+#License BSD 2-Clause
 PERMIT_PACKAGE= Yes
 
 .include <bsd.port.mk>
