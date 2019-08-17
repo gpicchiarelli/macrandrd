@@ -1,0 +1,7 @@
+macrandrd 
+===================================================================
+Just a tiny OpenBSD daemon to change periodically MAC addresses.
+rcctl compatible. It it a daemon to randomize MAC addresses for all
+suitable system network interfaces, with random periodicity.  Its
+main purpose is to help to build network applications dealing with
+MAC addresses.
