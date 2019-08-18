@@ -2,7 +2,7 @@
 
 COMMENT=tiny OpenBSD daemon to change periodically MAC addresses
 
-V=	0.1.0beta12
+V=	0.1.0beta13
 
 DISTNAME=macrandrd-${V}
 REVISION= 0
@@ -13,6 +13,7 @@ GH_PROJECT=macrandr
 GH_TAGNAME=${V}
 
 HOMEPAGE= https://github.com/gpicchiarelli/macrandr
+NO_TEST= Yes
 
 FLAVOR?=
 MANTAINTER= Giacomo Picchiarelli <gicchiarelli@gmail.com>
@@ -20,6 +21,9 @@ MANTAINTER= Giacomo Picchiarelli <gicchiarelli@gmail.com>
 FAKE_FLAGS= LOCALBASE=${WRKINST}\
             BINDIR="${WRKINST}/usr/local/sbin/"\
             MANDIR="${WRKINST}/usr/local/man/man8/"\
+
+MAKE_FLAGS= TRUEPREFIX="/usr/local/"\
+
 #License BSD 3-Clause
 PERMIT_PACKAGE= Yes
 
