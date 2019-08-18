@@ -2,7 +2,7 @@
 
 COMMENT=tiny OpenBSD daemon to change periodically MAC addresses
 
-V=	0.1.0beta9
+V=	0.1.0beta12
 
 DISTNAME=macrandrd-${V}
 REVISION= 0
@@ -18,7 +18,8 @@ FLAVOR?=
 MANTAINTER= Giacomo Picchiarelli <gicchiarelli@gmail.com>
 
 FAKE_FLAGS= LOCALBASE=${WRKINST}\
-	    
+            BINDIR="${WRKINST}/usr/local/sbin/"\
+            MANDIR="${WRKINST}/usr/local/man/man8/"\
 #License BSD 3-Clause
 PERMIT_PACKAGE= Yes
 
