@@ -2,7 +2,7 @@
 
 COMMENT=tiny OpenBSD daemon to change periodically MAC addresses
 
-V=	0.1.0beta13
+V=	0.1.0
 
 DISTNAME=macrandrd-${V}
 REVISION= 0
